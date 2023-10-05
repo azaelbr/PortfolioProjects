@@ -1,15 +1,17 @@
--- GLOBAL NUMBERS
 
-select SUM(new_cases) as total_cases, SUM(new_deaths) as total_deaths, SUM(cast(new_deaths as float))/SUM(new_cases)*100 as DeathPercentage
-from PortfolioProject..CovidDeaths
-where continent is not null
-order by 1,2
 
 
 select *
 from PortfolioProject..CovidDeaths
 where continent is not null
 order by 3,4
+
+-- GLOBAL NUMBERS
+
+select SUM(new_cases) as total_cases, SUM(new_deaths) as total_deaths, SUM(cast(new_deaths as float))/SUM(new_cases)*100 as DeathPercentage
+from PortfolioProject..CovidDeaths
+where continent is not null
+order by 1,2	
 
 --select *
 --from PortfolioProject..CovidVaccinations

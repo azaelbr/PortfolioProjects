@@ -80,7 +80,7 @@ where continent is null
 group by location
 order by TotalDeathCount desc
 
---continue the class at 39:48 / 1:17:08
+--continue the class at 39:48
 
 -- GLobal Numbers
 
